@@ -1,0 +1,1 @@
+export { MovieService } from "./MovieService";
