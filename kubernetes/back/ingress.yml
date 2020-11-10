@@ -1,14 +1,18 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-  name: backend-ingress
+    annotations:
+        kubernetes.io/ingress.class: nginx
+    labels:
+        app: proyecto
+    name: backend-ingress
+    namespace: proyecto
 spec:
-  rules:
-    - host: nginx.back.example.com # cambiar esta linea por su dominio
-      http:
-        paths:
-          - backend:
-              serviceName: service-back-proyecto-sopes2
-              servicePort: 3100
+    rules:
+        - host: nginx.back.example.com
+          http:
+              paths:
+                  - backend:
+                        serviceName: service-back-proyecto-sopes2
+                        servicePort: 3100
+                    path: /

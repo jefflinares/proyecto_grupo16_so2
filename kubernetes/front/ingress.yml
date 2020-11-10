@@ -2,7 +2,10 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
     annotations:
-        kubernetes.io/ingress.class: "nginx"
+        kubernetes.io/ingress.class: nginx
+    labels:
+        app: proyecto
+    namespace: proyecto
     name: frontend-ingress
 spec:
     rules:
@@ -12,3 +15,4 @@ spec:
                   - backend:
                         serviceName: service-web-proyecto-sopes2
                         servicePort: 80
+                    path: /
