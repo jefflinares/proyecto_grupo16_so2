@@ -6,7 +6,7 @@ metadata:
     name: deploy-web-proyecto-sopes2
     namespace: proyecto
 spec:
-    replicas: 3
+    replicas: 2
     strategy:
         type: RollingUpdate
         rollingUpdate:
@@ -21,13 +21,13 @@ spec:
                 app: proyecto
         spec:
             containers:
-                - image: neftxx/web-proyecto-sopes2
-                  name: web-proyecto-sopes2
+                - image:
+                  name: proyecto-grupo16-so2-frontend 
                   ports:
                       - containerPort: 80
                   env:
                       - name: REACT_APP_BASE_API
-                        value: "service-back-poryecto-sopes2.proyecto.svc.cluster.local:3100"
+                        value: "service-back-proyecto-sopes2.proyecto.svc.cluster.local:3100"
             restartPolicy: Always
 ---
 apiVersion: v1
