@@ -26,7 +26,7 @@ spec:
                   ports:
                       - containerPort: 80
                   env:
-                      - name: REACT_APP_BACKEND
+                      - name: REACT_APP_BASE_API
                         value: "localhost"
             restartPolicy: Always
 ---
