@@ -27,7 +27,7 @@ spec:
                       - containerPort: 80
                   env:
                       - name: REACT_APP_BASE_API
-                        value: "localhost"
+                        value: "service-back-poryecto-sopes2.proyecto.svc.cluster.local:3100"
             restartPolicy: Always
 ---
 apiVersion: v1
