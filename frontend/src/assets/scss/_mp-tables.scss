@@ -1,0 +1,52 @@
+//Tables
+.table thead th{
+  border-color: #dee2e6;
+  border-bottom: none !important;
+}
+.table-card{padding: 0;}
+// remove padding when it's a table
+.table-card .card-body{
+padding: 0 0 1.25rem 0;
+}
+.react-bootstrap-table{padding-top: .5em}
+.table-mp{table-layout: fixed; margin-bottom: 0;}
+.table-mp thead, .react-bootstrap-table thead{
+  background: $mp-pale-grey!important;
+  border-bottom: none;
+  }
+  .table-mp thead th, .table-mp th,
+  .react-bootstrap-table thead th, .react-bootstrap-table th {
+    font-family: tipoBold;
+    font-weight: 700;
+    font-size: $font-size-sm*1.1!important;
+    text-align: center;
+    padding: .75rem 1rem;
+    }
+    .table-mp td, .react-bootstrap-table td{
+      padding: .5rem;
+      vertical-align: middle;
+      text-align: center;
+      border-bottom: 1px solid $mp-pale-grey!important;
+      border-top: none!important;
+      }
+  .table-mp tr td span{
+    display: block;
+    line-height: 1.5rem;
+    }
+    .table-mp tr td span.two-up{
+        display: inline-block;
+      }
+    .table-mp span.footer-row{
+      padding-top: 1rem;
+      vertical-align: bottom;
+      }
+    .table-mp tr td span.draft{
+      color: $mp-red;
+      }
+.table-mp button, .card-footer button{
+    padding: .5rem 1rem;
+    min-width: 49%;
+    }
+.numero-col{
+  width: 17%;
+  }

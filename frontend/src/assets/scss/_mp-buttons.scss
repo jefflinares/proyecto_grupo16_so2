@@ -1,0 +1,287 @@
+// MP Custom buttons
+button{outline: none!important; &:focus{outline: none!important; }}
+button:disabled{cursor: default;}
+
+a.normal, button.btn-link{
+  color: $mp-light-blue!important;
+  &:hover{
+    color: $mp-mid-grey;
+    }
+  }
+  button.btn-link{font-weight: bold; text-decoration: none;}
+  .btn-link:hover{text-decoration: none!important;}
+  a {
+    color: $mp-link-color;
+    text-decoration: $mp-link-decoration;
+    background-color: transparent; // Remove the gray background on active links in IE 10.
+    -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+
+      &:hover {
+        color: $mp-link-hover-color;
+        text-decoration: none !important;
+        }
+  }
+a.link{
+  color: $mp-dark-grey;
+  &:hover{
+    color: $mp-mid-blue;
+    }
+}
+a.textLink{
+  color: $mp-light-blue;
+  &:hover{
+    color: $mp-mid-blue;
+    }
+}
+// Round buttons used in Notification drop down
+// Report
+.btn-informe{
+  background-color: $mp-mid-blue;
+  color: $mp-white;
+  }
+//Request
+.btn-request{
+  background-color: $mp-mid-green;
+  color: $mp-white;
+  }
+//Meeting
+.btn-meeting{
+  background-color: $mp-orange;
+  color: $mp-white;
+  }
+//small icon buttons
+.btn-icon{
+  background: transparent;
+  border: none;
+  color: $mp-mid-grey;
+  font-size: $font-size-lg;
+  &:hover{
+    color: $mp-mid-blue;
+    }
+  &:active{
+    color: $mp-dark-blue;
+    }
+  }
+  // Top Row buttons - Ingreso de caso y Mi calendario
+  .btn-secondary, .btn-primary, .btn-outline-secondary{margin: 0; padding: .85rem 2rem;}
+  .btn-secondary.full-width, .btn-primary.full-width{width: 100%;}
+  .half-width{width: 49%;}
+
+  .btn-primary, .btn-primary.disabled, .btn-primary:disabled{
+    background-color: $btn-primary-background;
+    border-color: darken($btn-primary-background, 10%);
+    &:hover{
+        background-color: darken($btn-primary-background, 10%);
+        border-color: darken($btn-primary-background, 12%);
+        }
+      &:focus, &:active{
+        background-color: darken($btn-primary-background, 14%)!important;
+        border-color: darken($btn-primary-background, 12%)!important;
+        outline: none;
+        box-shadow: none;
+        }
+      }
+      .btn-primary.disabled, .btn-primary:disabled{
+        background-color: $btn-primary-background;
+        border-color: darken($btn-primary-background, 10%);
+        &:hover{
+          background-color: $btn-primary-background;
+          border-color: darken($btn-primary-background, 10%);
+            }
+          &:focus, &:active{
+            outline: none;
+            box-shadow: none;
+            }
+          }
+    .btn-secondary{
+        &:focus{
+          background-color: darken($btn-secondary-background, 10%);
+          border-color: darken($btn-secondary-background, 12%);
+          }
+        }
+  .btn-sm{
+    font-size: $font-size-base;
+    }
+
+
+.btn-social{
+  background-color: $btn-primary-background;
+  border-color: darken($btn-primary-background, 10%);
+  &:hover{
+      background-color: darken($btn-primary-background, 10%);
+      border-color: darken($btn-primary-background, 12%);
+      }
+    &:focus, &:active{
+      background-color: darken($btn-primary-background, 14%)!important;
+      border-color: darken($btn-primary-background, 12%)!important;
+      outline: none;
+      box-shadow: none;
+      }
+    }
+
+// MAIL
+.mailbox .nav-link i{
+  padding-left: .5em;
+  position: relative;
+  top: .1em;
+  }
+.user-menu-icon{
+  font-size: $font-size-regular;
+  position: relative;
+  padding-right: .25em;
+  color: darken($mp-mid-grey, 15%);
+  }
+.dropdown-item{
+  color: $mp-charcoal;
+  font-size: $font-size-regular;
+  &:hover{
+    background-color:  $mp-pale-grey!important;
+    }
+  &:active{
+    background-color:  $mp-mid-blue!important;
+    }
+  }
+
+.sidebar-nav ul{margin-top: 1em;}
+.sidebar-nav ul .sidebar-item .sidebar-link{
+  opacity: 1;
+  }
+.last-nav-help{
+  position: absolute;
+  bottom: 0;
+  }
+.side-nav{
+  margin-bottom: 1em;
+  }
+// add divider to nav
+.nav-item-after{
+  border-bottom: lighten($mp-dark-blue, 12%);
+  &:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f1ea";
+    position:absolute;
+    top:100%;
+    left:1em;
+    width:85%;
+    height:2px;
+    margin-top:-1px;
+    background: lighten($mp-dark-blue, 12%);
+    }
+  }
+
+//right side stepped ngAfterViewInit
+.right-section-nav{width: 100%; margin-top: 2em;}
+.btn-step-nav{
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  color: $mp-left-nav;
+  font-size: $font-size-lg;
+  text-align: right;
+  opacity: .55;
+  &:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 1em;
+    content: '\f111'
+    }
+  &:hover{
+    color: darken($mp-left-nav, 15%);
+    opacity: .85;
+    }
+  }
+.btn-step-nav.active{
+  color: lighten($mp-left-nav, 10%);
+  opacity: 1;
+  }
+
+.btn-mp-submit{
+  min-width: 11em;
+  padding: .825em;
+  }
+.page-foot button, .mp-table.results-table button{
+  padding: .85rem 1rem;
+  }
+
+.add-element-link{
+  color: $mp-dark-grey;
+  font-weight: 700;
+  &:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 1em;
+    content: '\f055';
+    margin-right: .5em;
+  }
+  &:hover{
+    color: $mp-light-grey;
+  }
+}
+.contextual-help{
+  color: $mp-dark-grey;
+  font-weight: 700;
+  margin-left: 1em;
+  font-size: $font-size-lg*.9;
+  position: relative;
+  top: .1em;
+  &:hover{
+    color: $mp-light-grey;
+  }
+}
+
+// my profile drop menu
+.dropdown-item:hover{
+  background: $mp-white!important;
+  color: $mp-mid-blue;
+  i{color: $mp-mid-blue;}
+  }
+  .dropdown-item:focus{
+    background: $mp-white!important;
+    color: $mp-mid-grey;
+    i{color: $mp-mid-grey;}
+    }
+
+// Custom pills and sub navigation
+
+// this is for custom pills
+.custom-pills {
+  .nav-pills {
+    .nav-link {
+      border-radius: 0;
+      opacity: 0.7;
+      color: $mp-dark-grey;
+      font-size: $font-size-base*1.2!important;
+      margin: .5rem;
+      &.active {
+        color: $mp-mid-blue;
+        opacity: 1;
+        background-color: transparent;
+        border-bottom: 2px solid $mp-mid-blue;
+      }
+    }
+  }
+}
+
+.inline-btn{ display: inline-block; margin-right: 1em;}
+
+// table footer Links
+.footer-row .bold-link, .card-footer .bold-link{font-size: $font-size-lg*.85; font-weight: 700;}
+
+//reset nav
+
+.navbar{padding: 0 !important}
+
+// icons
+.icon-btn{
+  padding: 0!important;
+  display: inline-block;
+  text-align: right
+}
+.plus-btn{
+  display: inline-block;
+  margin-top: .5em;
+  font-family: 'tipoBold';
+  font-weight: 700;
+  > i{color: $mp-green; margin-right: .5em;}
+  &:focus{text-decoration: none;}
+}

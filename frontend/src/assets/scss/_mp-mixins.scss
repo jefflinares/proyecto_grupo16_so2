@@ -1,0 +1,61 @@
+// -------------- TYPOGRAPHY MIXINS -------------------------
+
+//Reset all UL aspects to nothing... Removes browser specific padding and list style
+//Restablecer todos los aspectos UL a nada... Elimina el relleno específico del navegador y el estilo de lista
+
+@mixin reset-ul($margin: 0em, $padding: 0em, $list-style: none){
+	list-style: $list-style;
+	-webkit-margin-before: $margin;
+    -webkit-margin-after: $margin;
+    -webkit-margin-start: $margin;
+    -webkit-margin-end: $margin;
+    -webkit-padding-start: $padding;
+	}
+
+// -------------- ANIMATION MIXINS -------------------------
+//delay transitions
+@mixin delay-trans($duration: .25s) {
+	transition-delay: $duration;
+	}
+
+  // -------------- CORNERS & BORDERS -------------------------
+
+  @mixin round-corners ($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  	-webkit-border-top-right-radius:    $topright;
+  	-webkit-border-bottom-right-radius: $bottomright;
+  	-webkit-border-bottom-left-radius:  $bottomleft;
+  	-webkit-border-top-left-radius:     $topleft;
+
+  	-moz-border-radius-topright:        $topright;
+  	-moz-border-radius-bottomright:     $bottomright;
+  	-moz-border-radius-bottomleft:      $bottomleft;
+  	-moz-border-radius-topleft:         $topleft;
+
+  	border-top-right-radius:            $topright;
+  	border-bottom-right-radius:         $bottomright;
+  	border-bottom-left-radius:          $bottomleft;
+  	border-top-left-radius:             $topleft;
+
+  	-moz-background-clip:    padding;
+  	-webkit-background-clip: padding-box;
+  	background-clip:         padding-box;
+  }
+  // -------------- BOX SHADOWS -------------------------
+
+  @mixin box-shadow($value, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $value;
+      -moz-box-shadow:inset $value;
+      box-shadow:inset $value;
+    } @else {
+      -webkit-box-shadow: $value;
+      -moz-box-shadow: $value;
+      box-shadow: $value;
+    }
+  }
+  // -------------- GRADIENTS -------------------------
+  @mixin gradient($from, $to) {
+    background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background: -moz-linear-gradient(top,  $from, $to);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+  }

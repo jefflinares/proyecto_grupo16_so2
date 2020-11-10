@@ -1,0 +1,30 @@
+/* mp form styles */
+
+// cuando una casilla de verificación está en un formulario junto a las selecciones
+// when a checkbox is in a form next to selections
+.mp-form-check{
+  margin-top: 2.25em;
+  >label{padding-left: .3em;}
+  }
+.form-space{
+  margin-top: 1.25em;
+  }
+.form-space-sm{
+  margin-top: .5em;
+}
+.form-text{
+  display: block;
+}
+.form-check input:disabled + label, .disabled-label{opacity: .5;}
+
+.form-ul{
+   @include reset-ul;
+   .form-group{margin-bottom: 0;}
+   li{padding-bottom: .5em;}
+ }
+.num-box{
+  display: inline-block;
+  margin-left: .5em;
+  max-width: 3em;
+}
+.btn-group button{margin-right: .25em;}

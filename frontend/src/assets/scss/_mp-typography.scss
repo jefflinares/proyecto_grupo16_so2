@@ -1,0 +1,57 @@
+/* MP type */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'tipoBold';
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.2;
+  color: inherit;
+  }
+
+p.ital{
+  font-family: 'tipoItalic';
+  font-weight: 400;
+}
+
+.alertaRoja{
+  color: $mp-red;
+  }
+  // ---------------- HEADING DECORATION -------------------------
+
+  .title-fancy {
+   overflow: hidden;
+   text-align: center;
+   padding: 0 .5em;
+  }
+  .title-fancy:before,
+  .title-fancy:after {
+   background-color: $mp-light-grey;
+   content: "";
+   display: inline-block;
+   height: 1px;
+   position: relative;
+   vertical-align: middle;
+   width: 50%;
+  }
+  .title-fancy:before {
+   right: 0.5em;
+   margin-left: -50%;
+  }
+  .title-fancy:after {
+   left: 0.5em;
+   margin-right: -50%;
+  }
+label.form-label, label.form-check-label{
+    font-family: 'tipoBold';
+    font-weight: 700;
+    font-size: 0.9rem !important;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1em;
+}
+.label-above{display: block; padding-top: .4em;}
+
+.icon-label{margin-bottom: .25em !important; width: 100%;}
+.label-text{padding-top: .5em;}
+.inline-check{margin-top: 1em;}

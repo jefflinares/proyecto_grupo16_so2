@@ -1,0 +1,26 @@
+/* Update styling of Sweet alerts */
+
+//confirm buttons - green to match
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: $primary!important;
+    color: #fff;
+    font-size: 1.0625em;
+  }
+
+// danger X match MP red
+.swal2-icon.swal2-error [class^=swal2-x-mark-line]{
+  background-color: $mp-red!important;
+  }
+.swal2-icon.swal2-error{
+  color: $mp-red!important;
+  border-color: $mp-red!important;
+  }
+
+// type color matches
+
+.swal2-title, .swal2-content{
+  color: $text-color!important;
+}

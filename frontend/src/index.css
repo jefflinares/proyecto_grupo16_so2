@@ -1,0 +1,41 @@
+/* Global Tech Plat Styles */
+@font-face {
+  font-family: "tipoBold";
+  src: url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-700.eot");
+  src: url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-700.woff") format("woff"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-700.ttf") format("truetype"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-700.svg#tipoBold") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "tipoItalic";
+  src: url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-italic.eot");
+  src: url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-italic.woff") format("woff"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-italic.ttf") format("truetype"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-italic.svg#tipoItalic") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "tipoRegular";
+  src: url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-regular.eot");
+  src: url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-regular.woff") format("woff"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-regular.ttf") format("truetype"), url("assets/fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-regular.svg#tipoRegular") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'tipoRegular';
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'tipoBold';
+  font-weight: 700;
+}
+
+p.ital {
+  font-family: 'tipoItalic';
+  font-weight: 400;
+}

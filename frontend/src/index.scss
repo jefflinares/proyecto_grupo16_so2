@@ -1,0 +1,28 @@
+/* Hojas de estilo de plataforma tecnológica global  */
+// Author: Jeannie Smith
+// Date: January 28, 2020
+
+// fuente
+@import 'assets/scss/font-face';
+
+// Variables de fuente - llamar a fuentes autohospedadas
+@include fontFace('tipoBold','../fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-700');
+@include fontFace('tipoItalic','../fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-italic');
+@include fontFace('tipoRegular','../fonts/source-sans-pro-v13-latin/source-sans-pro-v13-latin-regular');
+
+
+// variables globales
+@import 'assets/scss/variables';
+@import "assets/scss/_mp-mixins.scss";
+// diseño globales
+@import 'assets/scss/layout';
+@import 'assets/scss/mp-buttons.scss';
+@import 'assets/scss/mp-typography';
+@import 'assets/scss/mp-tables';
+@import 'assets/scss/mp-forms';
+
+// customize sweet alerts
+@import 'assets/scss/mp-sweet-alert-custom';
+
+// Importar Bootstrap con variables predeterminadas
+@import '~bootstrap/scss/bootstrap.scss';

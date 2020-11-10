@@ -1,0 +1,15 @@
+/* *** Home Layout *** */
+// get MP Global Variables & Helpers
+@import "../../assets/scss/_variables.scss";
+@import "../../assets/scss/_mp-mixins.scss";
+
+.homeContainer{
+  margin-top: $topbar-height;
+  padding: 2em;
+  @media (min-width: 768px){
+    margin-left: 33.33333%;
+    }
+  @media (min-width: 992px){
+    margin-left: 16.66667%;
+    }
+  }

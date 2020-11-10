@@ -1,0 +1,122 @@
+// Variables globales para plataforma tecnológica
+// Author: Jeannie Smith
+// Date: January 28, 2020
+
+
+
+
+// MP Color system
+//
+
+$mp-white:                      #fff !default;
+$mp-pale-grey:                  #e4e5e5 !default;
+$mp-light-grey:                 #b4b5b5 !default;
+$mp-mid-grey:                   #aeaeae !default;
+$mp-dark-grey:                  #6c757d !default;
+$mp-charcoal:                   #212529 !default;
+
+$mp-left-nav:                   #4D4F5C !default;
+
+$mp-pale-blue:                  #94b0ce !default;
+$mp-light-blue:                 #6684a4 !default;
+$mp-mid-blue:                   #275181 !default;
+$mp-dark-blue:                  #233242 !default;
+
+$mp-green:                      #289113 !default;
+$mp-mid-green:                  #a5c38c !default;
+$mp-light-green:                #5eb74d !default;
+$mp-pale-green:                 #b6f2c6 !default;
+
+$mp-orange:                     #e99614 !default;
+
+$mp-yellow:                     #ffbc34 !default;
+$mp-pale-yellow:                #f7fecf !default;
+
+$mp-red:                        #cb2027 !default;
+
+
+$primary:                       $mp-green !default;
+$secondary:                     $mp-mid-blue !default;
+$success:                       $mp-mid-green !default;
+$info:                          $mp-mid-blue !default;
+$warning:                       $mp-pale-yellow !default;
+$danger:                        $mp-red !default;
+$light:                         $mp-light-grey !default;
+$dark:                          $mp-dark-grey !default;
+
+// DESIGN
+$shadow:                        1px 0px 20px rgba(0, 0, 0, 0.08);
+$transitions:                   0.2s ease-in;
+$border-decoration-tp:          1px solid $mp-pale-grey;
+
+%square { border-radius: 0px }
+
+%rotate45 {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+$base-scale-mp:                 1rem !default;
+$corner-radius-tp:              $base-scale-mp/2;
+$border-color:                  $mp-light-grey;
+$body-bg:                       lighten($mp-pale-grey, 4%);
+$body-color:                    $mp-dark-grey !default;
+
+// TYPOGRAPHY
+//
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      tipoRegular !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$text-color:                    $mp-dark-grey;
+$font-weight-light:             300 !default;
+$font-weight-normal:            400 !default;
+$font-weight-medium:            500 !default;
+$font-weight-bold:              700 !default;
+
+$font-size-base:                1rem !default;
+$font-size-regular:             1rem !default;
+$font-size-xsm:                 $font-size-base*0.6;
+$font-size-sm:                  $font-size-base*0.9;
+$font-size-lg:                  $font-size-base*1.31;
+
+//Links
+$mp-link-color:                 $mp-mid-blue !default;
+$mp-link-decoration:            none !default;
+$mp-link-hover-color:           $mp-dark-grey !default;
+$mp-link-hover-decoration:      none !default;
+
+// Main navigation
+$mp-main-nav-color:             $mp-white;
+$mp-left-nav:                   $mp-dark-blue;
+//Fonts
+
+$mp-font-size-small:            14px;
+
+$headings-font-weight:          400 !default;
+
+// Menu Usuario
+// color de fondo
+$topbar:                        $mp-white;
+$transparent-dark-bg:           rgba(0, 0, 0, 0.05);
+
+$topbar-height:                 4em;
+$topbar-padding:                0.75em 0 0;
+$topbar-navlink-height:         $topbar-height;
+$topbar-navbrand-padding:       0 10px;
+
+// Links
+$topbar-navlink-padding:        0 15px;
+$topbar-navlink-font-size:      0.875rem;
+
+// Buttons
+$btn-primary-background:        $mp-green;
+$btn-secondary-background:      $mp-mid-blue;
+
+// Stacking - z-index
+
+$left-sidebar-zindex:           65;

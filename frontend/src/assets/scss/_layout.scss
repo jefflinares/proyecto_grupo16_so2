@@ -1,0 +1,78 @@
+// Estilos para el diseño global
+// Author: Jeannie Smith
+// Date: January 28, 2020
+
+body {
+  font-family: 'tipoRegular';
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
+  color: $text-color;
+  text-align: left; // 3
+  background-color: $body-bg; // 2
+}
+.container-fluid{
+  //padding: 0 !important;
+  }
+  // columns
+  .left-col-main{
+    background: $mp-white;
+    min-height: calc(100vh - 158px);
+    }
+  .left-col-main.admin-casos{
+    padding: 1rem;
+    }
+  .right-col-nav{
+    padding-left: 2.5em !important;;
+    padding-right: 0px !important;
+    }
+  .search-case{
+    margin-top: 5em;
+    }
+
+.pull-left{float: left;}
+.pull-right{float: right;}
+.collapse-container{
+  border-top: 1px solid $mp-pale-grey;
+  }
+  .collapse-wrap{padding: 1em; width: 100%;}
+
+// no border on first table rows
+.table tr:first-child td{
+  border-top: none;
+  }
+  //Helpers
+
+  // small padding helper
+  .pad-left{padding-left: .5em;}
+  .pad-right{padding-left: .5em;}
+  .pad-top{padding-top: .7em;}
+  .pad-bottom{padding-bottom: .7em;}
+  .no-pad-btm {padding-bottom: 0;}
+  .pad-row{ padding: 1em 0;}
+  .centered{ text-align: center}
+  .section-row{ border-top: 1px solid $mp-pale-grey; margin-top: 1em;}
+  .btn-row{padding: 1.25em 0 2em;}
+// cards
+.card{
+  min-height: 380px;
+}
+// card images no rounded corners
+.card-img, .card-img-top{
+  border-radius: 0!important;
+  }
+  .card-img{
+    max-height: 110px!important;
+    overflow: hidden;
+    >img{position: relative; top: -2em}
+    }
+
+.show-inline{display: inline-block; margin-right: 1em;}
+.case-id{text-align: right;}
+
+// content wrappers
+.right-col-content-wrapper{
+  background: $mp-white;
+  min-height: calc(100vh + 158px);
+  padding: 1em;
+}
