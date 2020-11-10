@@ -1,3 +1,3 @@
 module.exports = {
-  baseApi: "http://localhost:3100/api/",
+  baseApi: process.env.REACT_APP_BASE_API,
 };
