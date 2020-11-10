@@ -15,4 +15,4 @@ ARG PASSWORD_MONGO=""
 
 EXPOSE $PORT
 
-RUN npm start
+CMD ["npm", "start"]
