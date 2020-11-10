@@ -14,5 +14,5 @@ COPY nginx/nginx.conf /etc/nginx/conf.d
 ARG PORT=80
 ARG REACT_APP_BASE_API="http://localhost:3100/api/"
 
-EXPOSE PORT
+EXPOSE $PORT
 CMD ["nginx", "-g", "daemon off;"]
