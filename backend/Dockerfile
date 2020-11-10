@@ -15,4 +15,4 @@ ARG PASSWORD_MONGO=""
 
 EXPOSE $PORT
 
-CMD ["node", "index.js"]
+CMD ["index.js"]
