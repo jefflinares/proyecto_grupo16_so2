@@ -49,7 +49,7 @@ tar -zxvf grafana-7.3.1.linux-amd64.tar.gz
 ![Instalación de Grafana y logeo](src/grafana1.jpg)
 
 
-![Configuracion del Dashboard](src/grafana2.jpg)
+![Configuracion del Dashboard](src/grafana2.png)
 
 
 Configuracion del Tablero en Grafana
