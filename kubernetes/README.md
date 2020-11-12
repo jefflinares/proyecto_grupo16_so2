@@ -13,6 +13,8 @@ el cual se subieron las imágenes a Google Cloud GCR. para la parte del back se 
 
 Creando un cluster de 3 nodos que replicaron la aplicación del tipo de deployment.
 
+kubectl apply -f <file>.yml
+
 ## Nginx
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.41.0/deploy/static/provider/cloud/deploy.yaml
